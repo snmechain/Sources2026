@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35521.163 d17.12
+VisualStudioVersion = 17.12.35521.163
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HelloWorld", "HelloWorld\HelloWorld.vcxproj", "{E1C69EA3-6098-46C7-9A05-CAAF91A1C894}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ClasseClavier", "ClasseClavier\ClasseClavier.vcxproj", "{99C851CB-217F-4ED5-A98C-A8BCC4A72542}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +23,19 @@ Global
 		{E1C69EA3-6098-46C7-9A05-CAAF91A1C894}.Release|x64.Build.0 = Release|x64
 		{E1C69EA3-6098-46C7-9A05-CAAF91A1C894}.Release|x86.ActiveCfg = Release|Win32
 		{E1C69EA3-6098-46C7-9A05-CAAF91A1C894}.Release|x86.Build.0 = Release|Win32
+		{99C851CB-217F-4ED5-A98C-A8BCC4A72542}.Debug|x64.ActiveCfg = Debug|x64
+		{99C851CB-217F-4ED5-A98C-A8BCC4A72542}.Debug|x64.Build.0 = Debug|x64
+		{99C851CB-217F-4ED5-A98C-A8BCC4A72542}.Debug|x86.ActiveCfg = Debug|Win32
+		{99C851CB-217F-4ED5-A98C-A8BCC4A72542}.Debug|x86.Build.0 = Debug|Win32
+		{99C851CB-217F-4ED5-A98C-A8BCC4A72542}.Release|x64.ActiveCfg = Release|x64
+		{99C851CB-217F-4ED5-A98C-A8BCC4A72542}.Release|x64.Build.0 = Release|x64
+		{99C851CB-217F-4ED5-A98C-A8BCC4A72542}.Release|x86.ActiveCfg = Release|Win32
+		{99C851CB-217F-4ED5-A98C-A8BCC4A72542}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F2C16775-A263-418F-9F89-260BA11A5D66}
 	EndGlobalSection
 EndGlobal
