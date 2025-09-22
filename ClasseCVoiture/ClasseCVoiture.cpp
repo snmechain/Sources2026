@@ -96,7 +96,7 @@ Scénario 6 : Tableau ou vecteur d’objets
 
 Stockez plusieurs voitures dans un tableau ou un vecteur.
 
-Parcourez le tableau pour appliquer des actions (démarrage, accélération, affichage).
+Parcourez le tableau pour appliquer des actions (démarrage, accélération, affichage)
 
 But : Apprendre à manipuler plusieurs objets et boucles.
 
