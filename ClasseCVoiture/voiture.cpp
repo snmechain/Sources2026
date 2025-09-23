@@ -27,22 +27,28 @@ void CVoiture::affiche() {
     cout << "  Modèle    : " << modele << endl;
     cout << "  Puissance : " << puissance << " CV" << endl;
     cout << "  Carburant : " << carburant << endl;
-    cout << "  Vitesse   : " << vitesse << " km/h" << endl;
+    cout << "  Vitesse   : " << vitesse << " km/h" << endl<<endl;
 }
 
 void CVoiture::demarrer() {
-    cout << "La voiture démarre." << endl;
+    cout << "La voiture demarre." << endl;
     vitesse = 10; // vitesse initiale au démarrage
 }
 
 void CVoiture::arreter() {
-    cout << "La voiture s'arrête." << endl;
+    cout << "La voiture s'arrete." << endl;
     vitesse = 0;
 }
 
 void CVoiture::accelerer(int valeur) {
     vitesse += valeur;
-    cout << "La voiture accélère de " << valeur << " km/h. Vitesse actuelle : " << vitesse << " km/h" << endl;
+    if (vitesse > VITESSE_MAX)
+    {
+        vitesse -= valeur;
+        cout << "La voiture ne peut depasser sa vitesse limite de  " << VITESSE_MAX << " km/h. Vitesse actuelle : " << vitesse << " km/h" << endl;
+    }
+    else
+        cout << "La voiture accelere de " << valeur << " km/h. Vitesse actuelle : " << vitesse << " km/h" << endl;
 }
 
 void CVoiture::ralentir(int valeur) {

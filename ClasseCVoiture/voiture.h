@@ -13,6 +13,9 @@ Compilation   :
 #include <iostream>
 using namespace std;
 
+// vitesse limite ddes voitures
+#define VITESSE_MAX 240
+
 /**
  * @class CVoiture
  * @brief Classe représentant une voiture avec ses caractéristiques et son comportement.

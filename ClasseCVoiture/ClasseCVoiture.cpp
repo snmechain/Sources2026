@@ -23,10 +23,13 @@ int main() {
     // Affichage initial
     voiture1.affiche();
 
-    // Simulation d'une conduite
+    // Simulation d'une conduite et vérification par affichage
     voiture1.demarrer();
+    voiture1.affiche();
     voiture1.accelerer(30);
+    voiture1.affiche();
     voiture1.ralentir(15);
+    voiture1.affiche();
     voiture1.arreter();
 
     // Affichage final
