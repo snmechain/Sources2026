@@ -21,7 +21,7 @@ using namespace std;
  * @brief Classe représentant une voiture avec ses caractéristiques et son comportement.
  */
 class CVoiture {
-public:
+private:
     /// Marque de la voiture
     string marque;
 
@@ -36,6 +36,8 @@ public:
 
     /// Vitesse actuelle de la voiture en km/h
     int vitesse;
+
+public :
 
     /**
      * @brief Initialise les attributs de la voiture.

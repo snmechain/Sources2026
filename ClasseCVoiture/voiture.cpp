@@ -45,7 +45,8 @@ void CVoiture::accelerer(int valeur) {
     if (vitesse > VITESSE_MAX)
     {
         vitesse -= valeur;
-        cout << "La voiture ne peut depasser sa vitesse limite de  " << VITESSE_MAX << " km/h. Vitesse actuelle : " << vitesse << " km/h" << endl;
+        cout << "La voiture ne peut depasser sa vitesse limite de  " 
+        << VITESSE_MAX << " km/h. Vitesse actuelle : " << vitesse << " km/h" << endl;
     }
     else
         cout << "La voiture accelere de " << valeur << " km/h. Vitesse actuelle : " << vitesse << " km/h" << endl;
