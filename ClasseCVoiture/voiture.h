@@ -40,13 +40,20 @@ private:
 public :
 
     /**
-     * @brief Initialise les attributs de la voiture.
+     * @brief Constructeur  : Initialise les attributs de la voiture.
+     * et remplace la méthode init
      * @param m Marque
      * @param mod Modèle
-     * @param p Puissance
+     * @param p Puissance en CV
      * @param c Carburant
+     * @param v vitesse
      */
-    void init(string m, string mod, int p, string c);
+    CVoiture(string m, string mod, int p, string c,int v=0);
+
+    /**
+    * @brief Destructeur  : pour "nettoyer"
+    */
+    ~CVoiture();
 
     /**
      * @brief Affiche les informations de la voiture.

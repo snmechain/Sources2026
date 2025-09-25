@@ -13,12 +13,17 @@ Compilation   :
 
 #include "voiture.h"
 
-void CVoiture::init(string m, string mod, int p, string c) {
+CVoiture::CVoiture(string m, string mod, int p, string c,int v) {
     marque = m;
     modele = mod;
     puissance = p;
     carburant = c;
     vitesse = 0; // voiture à l'arrêt
+}
+
+CVoiture::~CVoiture()
+{
+    // rien à faire ici
 }
 
 void CVoiture::affiche() {
