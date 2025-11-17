@@ -15,310 +15,287 @@
 
         private void InitializeComponent()
         {
-            this.pnlHeader = new System.Windows.Forms.Panel();
-            this.picLogo = new System.Windows.Forms.PictureBox();
-            this.lblBienvenue = new System.Windows.Forms.Label();
-            this.pnlScan = new System.Windows.Forms.Panel();
-            this.btnPeser = new System.Windows.Forms.Button();
-            this.txtCodeBarre = new System.Windows.Forms.TextBox();
-            this.lblInstruction = new System.Windows.Forms.Label();
-            this.pnlTicket = new System.Windows.Forms.Panel();
-            this.lstArticles = new System.Windows.Forms.ListBox();
-            this.lblTicket = new System.Windows.Forms.Label();
-            this.pnlFidelite = new System.Windows.Forms.Panel();
-            this.txtCarteFidelite = new System.Windows.Forms.TextBox();
-            this.btnScannerCarte = new System.Windows.Forms.Button();
-            this.lblFidelite = new System.Windows.Forms.Label();
-            this.pnlTotal = new System.Windows.Forms.Panel();
-            this.lblTotalTexte = new System.Windows.Forms.Label();
-            this.lblTotalMontant = new System.Windows.Forms.Label();
-            this.pnlPaiement = new System.Windows.Forms.Panel();
-            this.btnAnnuler = new System.Windows.Forms.Button();
-            this.btnEspeces = new System.Windows.Forms.Button();
-            this.btnCarte = new System.Windows.Forms.Button();
-            this.pnlHeader.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
-            this.pnlScan.SuspendLayout();
-            this.pnlTicket.SuspendLayout();
-            this.pnlFidelite.SuspendLayout();
-            this.pnlTotal.SuspendLayout();
-            this.pnlPaiement.SuspendLayout();
-            this.SuspendLayout();
-
+            pnlHeader = new Panel();
+            picLogo = new PictureBox();
+            lblBienvenue = new Label();
+            pnlScan = new Panel();
+            btnPeser = new Button();
+            txtCodeBarre = new TextBox();
+            lblInstruction = new Label();
+            pnlTicket = new Panel();
+            lstArticles = new ListBox();
+            lblTicket = new Label();
+            pnlFidelite = new Panel();
+            txtCarteFidelite = new TextBox();
+            btnScannerCarte = new Button();
+            lblFidelite = new Label();
+            pnlTotal = new Panel();
+            lblTotalMontant = new Label();
+            lblTotalTexte = new Label();
+            pnlPaiement = new Panel();
+            btnAnnuler = new Button();
+            btnEspeces = new Button();
+            btnCarte = new Button();
+            pnlHeader.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)picLogo).BeginInit();
+            pnlScan.SuspendLayout();
+            pnlTicket.SuspendLayout();
+            pnlFidelite.SuspendLayout();
+            pnlTotal.SuspendLayout();
+            pnlPaiement.SuspendLayout();
+            SuspendLayout();
             // 
             // pnlHeader
             // 
-            this.pnlHeader.BackColor = System.Drawing.Color.FromArgb(220, 0, 0);
-            this.pnlHeader.Controls.Add(this.picLogo);
-            this.pnlHeader.Controls.Add(this.lblBienvenue);
-            this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlHeader.Location = new System.Drawing.Point(0, 0);
-            this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(1100, 90);
-            this.pnlHeader.TabIndex = 0;
-
+            pnlHeader.BackColor = Color.FromArgb(220, 0, 0);
+            pnlHeader.Controls.Add(picLogo);
+            pnlHeader.Controls.Add(lblBienvenue);
+            pnlHeader.Dock = DockStyle.Top;
+            pnlHeader.Location = new Point(0, 0);
+            pnlHeader.Name = "pnlHeader";
+            pnlHeader.Size = new Size(1100, 90);
+            pnlHeader.TabIndex = 0;
             // 
             // picLogo
             // 
-            this.picLogo.Image = null; // Vous pouvez ajouter un logo Carrefour ici
-            this.picLogo.Location = new System.Drawing.Point(20, 10);
-            this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(100, 70);
-            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picLogo.TabIndex = 1;
-            this.picLogo.TabStop = false;
-
+            picLogo.Location = new Point(20, 10);
+            picLogo.Name = "picLogo";
+            picLogo.Size = new Size(100, 70);
+            picLogo.SizeMode = PictureBoxSizeMode.Zoom;
+            picLogo.TabIndex = 1;
+            picLogo.TabStop = false;
             // 
             // lblBienvenue
             // 
-            this.lblBienvenue.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblBienvenue.Font = new System.Drawing.Font("Segoe UI", 22F, System.Drawing.FontStyle.Bold);
-            this.lblBienvenue.ForeColor = System.Drawing.Color.White;
-            this.lblBienvenue.Location = new System.Drawing.Point(0, 0);
-            this.lblBienvenue.Name = "lblBienvenue";
-            this.lblBienvenue.Size = new System.Drawing.Size(1100, 90);
-            this.lblBienvenue.TabIndex = 0;
-            this.lblBienvenue.Text = "Bienvenue à votre caisse Carrefour";
-            this.lblBienvenue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-
+            lblBienvenue.Dock = DockStyle.Fill;
+            lblBienvenue.Font = new Font("Segoe UI", 22F, FontStyle.Bold);
+            lblBienvenue.ForeColor = Color.White;
+            lblBienvenue.Location = new Point(0, 0);
+            lblBienvenue.Name = "lblBienvenue";
+            lblBienvenue.Size = new Size(1100, 90);
+            lblBienvenue.TabIndex = 0;
+            lblBienvenue.Text = "Bienvenue à votre caisse CIEL Market";
+            lblBienvenue.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // pnlScan
             // 
-            this.pnlScan.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pnlScan.Controls.Add(this.btnPeser);
-            this.pnlScan.Controls.Add(this.txtCodeBarre);
-            this.pnlScan.Controls.Add(this.lblInstruction);
-            this.pnlScan.Location = new System.Drawing.Point(20, 110);
-            this.pnlScan.Name = "pnlScan";
-            this.pnlScan.Size = new System.Drawing.Size(640, 110);
-            this.pnlScan.TabIndex = 1;
-
-            // 
-            // lblInstruction
-            // 
-            this.lblInstruction.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.lblInstruction.Location = new System.Drawing.Point(20, 10);
-            this.lblInstruction.Name = "lblInstruction";
-            this.lblInstruction.Size = new System.Drawing.Size(600, 30);
-            this.lblInstruction.TabIndex = 0;
-            this.lblInstruction.Text = "Scannez un article ou pesez un produit :";
-
-            // 
-            // txtCodeBarre
-            // 
-            this.txtCodeBarre.Font = new System.Drawing.Font("Segoe UI", 18F);
-            this.txtCodeBarre.Location = new System.Drawing.Point(20, 50);
-            this.txtCodeBarre.Name = "txtCodeBarre";
-            this.txtCodeBarre.Size = new System.Drawing.Size(420, 39);
-            this.txtCodeBarre.TabIndex = 1;
-
+            pnlScan.BackColor = Color.WhiteSmoke;
+            pnlScan.Controls.Add(btnPeser);
+            pnlScan.Controls.Add(txtCodeBarre);
+            pnlScan.Controls.Add(lblInstruction);
+            pnlScan.Location = new Point(20, 110);
+            pnlScan.Name = "pnlScan";
+            pnlScan.Size = new Size(640, 110);
+            pnlScan.TabIndex = 1;
             // 
             // btnPeser
             // 
-            this.btnPeser.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnPeser.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
-            this.btnPeser.Location = new System.Drawing.Point(460, 50);
-            this.btnPeser.Name = "btnPeser";
-            this.btnPeser.Size = new System.Drawing.Size(160, 40);
-            this.btnPeser.TabIndex = 2;
-            this.btnPeser.Text = "Peser un article";
-            this.btnPeser.UseVisualStyleBackColor = false;
-
+            btnPeser.BackColor = Color.LightSkyBlue;
+            btnPeser.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            btnPeser.Location = new Point(460, 50);
+            btnPeser.Name = "btnPeser";
+            btnPeser.Size = new Size(160, 40);
+            btnPeser.TabIndex = 2;
+            btnPeser.Text = "Peser un article";
+            btnPeser.UseVisualStyleBackColor = false;
+            // 
+            // txtCodeBarre
+            // 
+            txtCodeBarre.Font = new Font("Segoe UI", 18F);
+            txtCodeBarre.Location = new Point(20, 50);
+            txtCodeBarre.Name = "txtCodeBarre";
+            txtCodeBarre.Size = new Size(420, 47);
+            txtCodeBarre.TabIndex = 1;
+            // 
+            // lblInstruction
+            // 
+            lblInstruction.Font = new Font("Segoe UI", 14F);
+            lblInstruction.Location = new Point(20, 10);
+            lblInstruction.Name = "lblInstruction";
+            lblInstruction.Size = new Size(600, 30);
+            lblInstruction.TabIndex = 0;
+            lblInstruction.Text = "Scannez un article ou pesez un produit :";
             // 
             // pnlTicket
             // 
-            this.pnlTicket.BackColor = System.Drawing.Color.White;
-            this.pnlTicket.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlTicket.Controls.Add(this.lstArticles);
-            this.pnlTicket.Controls.Add(this.lblTicket);
-            this.pnlTicket.Location = new System.Drawing.Point(20, 230);
-            this.pnlTicket.Name = "pnlTicket";
-            this.pnlTicket.Size = new System.Drawing.Size(640, 460);
-            this.pnlTicket.TabIndex = 2;
-
-            // 
-            // lblTicket
-            // 
-            this.lblTicket.BackColor = System.Drawing.Color.LightGray;
-            this.lblTicket.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblTicket.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
-            this.lblTicket.Location = new System.Drawing.Point(0, 0);
-            this.lblTicket.Name = "lblTicket";
-            this.lblTicket.Size = new System.Drawing.Size(638, 40);
-            this.lblTicket.TabIndex = 0;
-            this.lblTicket.Text = "Votre ticket";
-            this.lblTicket.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-
+            pnlTicket.BackColor = Color.White;
+            pnlTicket.BorderStyle = BorderStyle.FixedSingle;
+            pnlTicket.Controls.Add(lstArticles);
+            pnlTicket.Controls.Add(lblTicket);
+            pnlTicket.Location = new Point(20, 230);
+            pnlTicket.Name = "pnlTicket";
+            pnlTicket.Size = new Size(640, 460);
+            pnlTicket.TabIndex = 2;
             // 
             // lstArticles
             // 
-            this.lstArticles.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lstArticles.Font = new System.Drawing.Font("Consolas", 14F);
-            this.lstArticles.FormattingEnabled = true;
-            this.lstArticles.ItemHeight = 22;
-            this.lstArticles.Location = new System.Drawing.Point(10, 50);
-            this.lstArticles.Name = "lstArticles";
-            this.lstArticles.Size = new System.Drawing.Size(620, 396);
-            this.lstArticles.TabIndex = 1;
-
+            lstArticles.BorderStyle = BorderStyle.None;
+            lstArticles.Font = new Font("Consolas", 14F);
+            lstArticles.FormattingEnabled = true;
+            lstArticles.ItemHeight = 27;
+            lstArticles.Location = new Point(10, 50);
+            lstArticles.Name = "lstArticles";
+            lstArticles.Size = new Size(620, 378);
+            lstArticles.TabIndex = 1;
+            // 
+            // lblTicket
+            // 
+            lblTicket.BackColor = Color.LightGray;
+            lblTicket.Dock = DockStyle.Top;
+            lblTicket.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            lblTicket.Location = new Point(0, 0);
+            lblTicket.Name = "lblTicket";
+            lblTicket.Size = new Size(638, 40);
+            lblTicket.TabIndex = 0;
+            lblTicket.Text = "Votre ticket";
+            lblTicket.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // pnlFidelite
             // 
-            this.pnlFidelite.BackColor = System.Drawing.Color.White;
-            this.pnlFidelite.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlFidelite.Controls.Add(this.txtCarteFidelite);
-            this.pnlFidelite.Controls.Add(this.btnScannerCarte);
-            this.pnlFidelite.Controls.Add(this.lblFidelite);
-            this.pnlFidelite.Location = new System.Drawing.Point(680, 110);
-            this.pnlFidelite.Name = "pnlFidelite";
-            this.pnlFidelite.Size = new System.Drawing.Size(400, 140);
-            this.pnlFidelite.TabIndex = 3;
-
-            // 
-            // lblFidelite
-            // 
-            this.lblFidelite.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
-            this.lblFidelite.Location = new System.Drawing.Point(20, 10);
-            this.lblFidelite.Name = "lblFidelite";
-            this.lblFidelite.Size = new System.Drawing.Size(300, 30);
-            this.lblFidelite.TabIndex = 0;
-            this.lblFidelite.Text = "Carte de fidélité Carrefour";
-
+            pnlFidelite.BackColor = Color.White;
+            pnlFidelite.BorderStyle = BorderStyle.FixedSingle;
+            pnlFidelite.Controls.Add(txtCarteFidelite);
+            pnlFidelite.Controls.Add(btnScannerCarte);
+            pnlFidelite.Controls.Add(lblFidelite);
+            pnlFidelite.Location = new Point(680, 110);
+            pnlFidelite.Name = "pnlFidelite";
+            pnlFidelite.Size = new Size(400, 140);
+            pnlFidelite.TabIndex = 3;
             // 
             // txtCarteFidelite
             // 
-            this.txtCarteFidelite.Font = new System.Drawing.Font("Segoe UI", 16F);
-            this.txtCarteFidelite.Location = new System.Drawing.Point(20, 50);
-            this.txtCarteFidelite.Name = "txtCarteFidelite";
-            this.txtCarteFidelite.Size = new System.Drawing.Size(250, 36);
-            this.txtCarteFidelite.TabIndex = 1;
-
+            txtCarteFidelite.Font = new Font("Segoe UI", 16F);
+            txtCarteFidelite.Location = new Point(20, 50);
+            txtCarteFidelite.Name = "txtCarteFidelite";
+            txtCarteFidelite.Size = new Size(250, 43);
+            txtCarteFidelite.TabIndex = 1;
             // 
             // btnScannerCarte
             // 
-            this.btnScannerCarte.BackColor = System.Drawing.Color.FromArgb(0, 120, 215);
-            this.btnScannerCarte.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
-            this.btnScannerCarte.ForeColor = System.Drawing.Color.White;
-            this.btnScannerCarte.Location = new System.Drawing.Point(280, 50);
-            this.btnScannerCarte.Name = "btnScannerCarte";
-            this.btnScannerCarte.Size = new System.Drawing.Size(100, 36);
-            this.btnScannerCarte.TabIndex = 2;
-            this.btnScannerCarte.Text = "Scanner";
-            this.btnScannerCarte.UseVisualStyleBackColor = false;
-
+            btnScannerCarte.BackColor = Color.FromArgb(0, 120, 215);
+            btnScannerCarte.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            btnScannerCarte.ForeColor = Color.White;
+            btnScannerCarte.Location = new Point(280, 50);
+            btnScannerCarte.Name = "btnScannerCarte";
+            btnScannerCarte.Size = new Size(100, 36);
+            btnScannerCarte.TabIndex = 2;
+            btnScannerCarte.Text = "Scanner";
+            btnScannerCarte.UseVisualStyleBackColor = false;
+            // 
+            // lblFidelite
+            // 
+            lblFidelite.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            lblFidelite.Location = new Point(20, 10);
+            lblFidelite.Name = "lblFidelite";
+            lblFidelite.Size = new Size(300, 30);
+            lblFidelite.TabIndex = 0;
+            lblFidelite.Text = "Carte de fidélité Carrefour";
             // 
             // pnlTotal
             // 
-            this.pnlTotal.BackColor = System.Drawing.Color.White;
-            this.pnlTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlTotal.Controls.Add(this.lblTotalMontant);
-            this.pnlTotal.Controls.Add(this.lblTotalTexte);
-            this.pnlTotal.Location = new System.Drawing.Point(680, 270);
-            this.pnlTotal.Name = "pnlTotal";
-            this.pnlTotal.Size = new System.Drawing.Size(400, 130);
-            this.pnlTotal.TabIndex = 4;
-
-            // 
-            // lblTotalTexte
-            // 
-            this.lblTotalTexte.Font = new System.Drawing.Font("Segoe UI", 18F);
-            this.lblTotalTexte.ForeColor = System.Drawing.Color.Gray;
-            this.lblTotalTexte.Location = new System.Drawing.Point(20, 15);
-            this.lblTotalTexte.Name = "lblTotalTexte";
-            this.lblTotalTexte.Size = new System.Drawing.Size(360, 35);
-            this.lblTotalTexte.TabIndex = 0;
-            this.lblTotalTexte.Text = "Total à payer";
-
+            pnlTotal.BackColor = Color.White;
+            pnlTotal.BorderStyle = BorderStyle.FixedSingle;
+            pnlTotal.Controls.Add(lblTotalMontant);
+            pnlTotal.Controls.Add(lblTotalTexte);
+            pnlTotal.Location = new Point(680, 270);
+            pnlTotal.Name = "pnlTotal";
+            pnlTotal.Size = new Size(400, 130);
+            pnlTotal.TabIndex = 4;
             // 
             // lblTotalMontant
             // 
-            this.lblTotalMontant.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold);
-            this.lblTotalMontant.ForeColor = System.Drawing.Color.DarkGreen;
-            this.lblTotalMontant.Location = new System.Drawing.Point(20, 50);
-            this.lblTotalMontant.Name = "lblTotalMontant";
-            this.lblTotalMontant.Size = new System.Drawing.Size(360, 70);
-            this.lblTotalMontant.TabIndex = 1;
-            this.lblTotalMontant.Text = "0,00 €";
-            this.lblTotalMontant.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-
+            lblTotalMontant.Font = new Font("Segoe UI", 36F, FontStyle.Bold);
+            lblTotalMontant.ForeColor = Color.DarkGreen;
+            lblTotalMontant.Location = new Point(20, 50);
+            lblTotalMontant.Name = "lblTotalMontant";
+            lblTotalMontant.Size = new Size(360, 70);
+            lblTotalMontant.TabIndex = 1;
+            lblTotalMontant.Text = "0,00 €";
+            lblTotalMontant.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // lblTotalTexte
+            // 
+            lblTotalTexte.Font = new Font("Segoe UI", 18F);
+            lblTotalTexte.ForeColor = Color.Gray;
+            lblTotalTexte.Location = new Point(20, 15);
+            lblTotalTexte.Name = "lblTotalTexte";
+            lblTotalTexte.Size = new Size(360, 35);
+            lblTotalTexte.TabIndex = 0;
+            lblTotalTexte.Text = "Total à payer";
             // 
             // pnlPaiement
             // 
-            this.pnlPaiement.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pnlPaiement.Controls.Add(this.btnAnnuler);
-            this.pnlPaiement.Controls.Add(this.btnEspeces);
-            this.pnlPaiement.Controls.Add(this.btnCarte);
-            this.pnlPaiement.Location = new System.Drawing.Point(680, 420);
-            this.pnlPaiement.Name = "pnlPaiement";
-            this.pnlPaiement.Size = new System.Drawing.Size(400, 270);
-            this.pnlPaiement.TabIndex = 5;
-
-            // 
-            // btnCarte
-            // 
-            this.btnCarte.BackColor = System.Drawing.Color.FromArgb(0, 180, 0);
-            this.btnCarte.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
-            this.btnCarte.ForeColor = System.Drawing.Color.White;
-            this.btnCarte.Location = new System.Drawing.Point(30, 20);
-            this.btnCarte.Name = "btnCarte";
-            this.btnCarte.Size = new System.Drawing.Size(340, 70);
-            this.btnCarte.TabIndex = 0;
-            this.btnCarte.Text = "PAYER PAR CARTE";
-            this.btnCarte.UseVisualStyleBackColor = false;
-
-            // 
-            // btnEspeces
-            // 
-            this.btnEspeces.BackColor = System.Drawing.Color.Gold;
-            this.btnEspeces.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
-            this.btnEspeces.Location = new System.Drawing.Point(30, 100);
-            this.btnEspeces.Name = "btnEspeces";
-            this.btnEspeces.Size = new System.Drawing.Size(340, 70);
-            this.btnEspeces.TabIndex = 1;
-            this.btnEspeces.Text = "PAYER EN ESPÈCES";
-            this.btnEspeces.UseVisualStyleBackColor = false;
-
+            pnlPaiement.BackColor = Color.WhiteSmoke;
+            pnlPaiement.Controls.Add(btnAnnuler);
+            pnlPaiement.Controls.Add(btnEspeces);
+            pnlPaiement.Controls.Add(btnCarte);
+            pnlPaiement.Location = new Point(680, 420);
+            pnlPaiement.Name = "pnlPaiement";
+            pnlPaiement.Size = new Size(400, 270);
+            pnlPaiement.TabIndex = 5;
             // 
             // btnAnnuler
             // 
-            this.btnAnnuler.BackColor = System.Drawing.Color.Firebrick;
-            this.btnAnnuler.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
-            this.btnAnnuler.ForeColor = System.Drawing.Color.White;
-            this.btnAnnuler.Location = new System.Drawing.Point(30, 190);
-            this.btnAnnuler.Name = "btnAnnuler";
-            this.btnAnnuler.Size = new System.Drawing.Size(340, 60);
-            this.btnAnnuler.TabIndex = 2;
-            this.btnAnnuler.Text = "ANNULER LA TRANSACTION";
-            this.btnAnnuler.UseVisualStyleBackColor = false;
-
+            btnAnnuler.BackColor = Color.Firebrick;
+            btnAnnuler.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            btnAnnuler.ForeColor = Color.White;
+            btnAnnuler.Location = new Point(30, 190);
+            btnAnnuler.Name = "btnAnnuler";
+            btnAnnuler.Size = new Size(340, 60);
+            btnAnnuler.TabIndex = 2;
+            btnAnnuler.Text = "ANNULER LA TRANSACTION";
+            btnAnnuler.UseVisualStyleBackColor = false;
             // 
-            // FormCaisse
+            // btnEspeces
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1100, 720);
-            this.Controls.Add(this.pnlPaiement);
-            this.Controls.Add(this.pnlTotal);
-            this.Controls.Add(this.pnlFidelite);
-            this.Controls.Add(this.pnlTicket);
-            this.Controls.Add(this.pnlScan);
-            this.Controls.Add(this.pnlHeader);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
-            this.Name = "FormCaisse";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Caisse Carrefour - Interface Client";
-            this.pnlHeader.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
-            this.pnlScan.ResumeLayout(false);
-            this.pnlScan.PerformLayout();
-            this.pnlTicket.ResumeLayout(false);
-            this.pnlFidelite.ResumeLayout(false);
-            this.pnlFidelite.PerformLayout();
-            this.pnlTotal.ResumeLayout(false);
-            this.pnlPaiement.ResumeLayout(false);
-            this.ResumeLayout(false);
+            btnEspeces.BackColor = Color.Gold;
+            btnEspeces.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            btnEspeces.Location = new Point(30, 100);
+            btnEspeces.Name = "btnEspeces";
+            btnEspeces.Size = new Size(340, 70);
+            btnEspeces.TabIndex = 1;
+            btnEspeces.Text = "PAYER EN ESPÈCES";
+            btnEspeces.UseVisualStyleBackColor = false;
+            // 
+            // btnCarte
+            // 
+            btnCarte.BackColor = Color.FromArgb(0, 180, 0);
+            btnCarte.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            btnCarte.ForeColor = Color.White;
+            btnCarte.Location = new Point(30, 20);
+            btnCarte.Name = "btnCarte";
+            btnCarte.Size = new Size(340, 70);
+            btnCarte.TabIndex = 0;
+            btnCarte.Text = "PAYER PAR CARTE";
+            btnCarte.UseVisualStyleBackColor = false;
+            // 
+            // CaisseAutonome2
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            ClientSize = new Size(1100, 720);
+            Controls.Add(pnlPaiement);
+            Controls.Add(pnlTotal);
+            Controls.Add(pnlFidelite);
+            Controls.Add(pnlTicket);
+            Controls.Add(pnlScan);
+            Controls.Add(pnlHeader);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
+            Name = "CaisseAutonome2";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Caisse Carrefour - Interface Client";
+            pnlHeader.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)picLogo).EndInit();
+            pnlScan.ResumeLayout(false);
+            pnlScan.PerformLayout();
+            pnlTicket.ResumeLayout(false);
+            pnlFidelite.ResumeLayout(false);
+            pnlFidelite.PerformLayout();
+            pnlTotal.ResumeLayout(false);
+            pnlPaiement.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion
