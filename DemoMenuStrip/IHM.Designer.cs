@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IHM));
             menuStrip1 = new MenuStrip();
-            toolStrip1 = new ToolStrip();
             configurationToolStripMenuItem = new ToolStripMenuItem();
             réseauToolStripMenuItem = new ToolStripMenuItem();
             liaisonSérieToolStripMenuItem = new ToolStripMenuItem();
@@ -38,10 +37,11 @@
             lectuerCodeBarreToolStripMenuItem = new ToolStripMenuItem();
             baseDeDonnéesToolStripMenuItem = new ToolStripMenuItem();
             connecterToolStripMenuItem = new ToolStripMenuItem();
-            lireToutToolStripMenuItem = new ToolStripMenuItem();
-            supprimerToolStripMenuItem = new ToolStripMenuItem();
             baseParDéfautToolStripMenuItem = new ToolStripMenuItem();
             baseDeSecoursToolStripMenuItem = new ToolStripMenuItem();
+            lireToutToolStripMenuItem = new ToolStripMenuItem();
+            supprimerToolStripMenuItem = new ToolStripMenuItem();
+            toolStrip1 = new ToolStrip();
             toolStripButton1 = new ToolStripButton();
             toolStripButton2 = new ToolStripButton();
             toolStripButton3 = new ToolStripButton();
@@ -59,16 +59,6 @@
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
-            // toolStrip1
-            // 
-            toolStrip1.ImageScalingSize = new Size(20, 20);
-            toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripButton1, toolStripButton2, toolStripButton3 });
-            toolStrip1.Location = new Point(0, 28);
-            toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(800, 27);
-            toolStrip1.TabIndex = 1;
-            toolStrip1.Text = "toolStrip1";
-            // 
             // configurationToolStripMenuItem
             // 
             configurationToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { réseauToolStripMenuItem, liaisonSérieToolStripMenuItem, afficheurToolStripMenuItem, lectuerCodeBarreToolStripMenuItem });
@@ -79,25 +69,25 @@
             // réseauToolStripMenuItem
             // 
             réseauToolStripMenuItem.Name = "réseauToolStripMenuItem";
-            réseauToolStripMenuItem.Size = new Size(224, 26);
+            réseauToolStripMenuItem.Size = new Size(218, 26);
             réseauToolStripMenuItem.Text = "Réseau";
             // 
             // liaisonSérieToolStripMenuItem
             // 
             liaisonSérieToolStripMenuItem.Name = "liaisonSérieToolStripMenuItem";
-            liaisonSérieToolStripMenuItem.Size = new Size(224, 26);
+            liaisonSérieToolStripMenuItem.Size = new Size(218, 26);
             liaisonSérieToolStripMenuItem.Text = "Liaison Série";
             // 
             // afficheurToolStripMenuItem
             // 
             afficheurToolStripMenuItem.Name = "afficheurToolStripMenuItem";
-            afficheurToolStripMenuItem.Size = new Size(224, 26);
+            afficheurToolStripMenuItem.Size = new Size(218, 26);
             afficheurToolStripMenuItem.Text = "Afficheur";
             // 
             // lectuerCodeBarreToolStripMenuItem
             // 
             lectuerCodeBarreToolStripMenuItem.Name = "lectuerCodeBarreToolStripMenuItem";
-            lectuerCodeBarreToolStripMenuItem.Size = new Size(224, 26);
+            lectuerCodeBarreToolStripMenuItem.Size = new Size(218, 26);
             lectuerCodeBarreToolStripMenuItem.Text = "Lectuer Code Barre";
             // 
             // baseDeDonnéesToolStripMenuItem
@@ -114,6 +104,18 @@
             connecterToolStripMenuItem.Size = new Size(161, 26);
             connecterToolStripMenuItem.Text = "Connecter";
             // 
+            // baseParDéfautToolStripMenuItem
+            // 
+            baseParDéfautToolStripMenuItem.Name = "baseParDéfautToolStripMenuItem";
+            baseParDéfautToolStripMenuItem.Size = new Size(197, 26);
+            baseParDéfautToolStripMenuItem.Text = "Base par défaut";
+            // 
+            // baseDeSecoursToolStripMenuItem
+            // 
+            baseDeSecoursToolStripMenuItem.Name = "baseDeSecoursToolStripMenuItem";
+            baseDeSecoursToolStripMenuItem.Size = new Size(197, 26);
+            baseDeSecoursToolStripMenuItem.Text = "Base de secours";
+            // 
             // lireToutToolStripMenuItem
             // 
             lireToutToolStripMenuItem.Name = "lireToutToolStripMenuItem";
@@ -126,17 +128,15 @@
             supprimerToolStripMenuItem.Size = new Size(161, 26);
             supprimerToolStripMenuItem.Text = "Supprimer";
             // 
-            // baseParDéfautToolStripMenuItem
+            // toolStrip1
             // 
-            baseParDéfautToolStripMenuItem.Name = "baseParDéfautToolStripMenuItem";
-            baseParDéfautToolStripMenuItem.Size = new Size(224, 26);
-            baseParDéfautToolStripMenuItem.Text = "Base par défaut";
-            // 
-            // baseDeSecoursToolStripMenuItem
-            // 
-            baseDeSecoursToolStripMenuItem.Name = "baseDeSecoursToolStripMenuItem";
-            baseDeSecoursToolStripMenuItem.Size = new Size(224, 26);
-            baseDeSecoursToolStripMenuItem.Text = "Base de secours";
+            toolStrip1.ImageScalingSize = new Size(20, 20);
+            toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripButton1, toolStripButton2, toolStripButton3 });
+            toolStrip1.Location = new Point(0, 28);
+            toolStrip1.Name = "toolStrip1";
+            toolStrip1.Size = new Size(800, 27);
+            toolStrip1.TabIndex = 1;
+            toolStrip1.Text = "toolStrip1";
             // 
             // toolStripButton1
             // 
